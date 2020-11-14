@@ -35,7 +35,7 @@ body {
     padding: 2px 5px;
     background: transparent;
     color: white;
-    border: 0;
+    border: none;
 }
 .searchbar div {
     border: solid 1px #444E56;
@@ -43,4 +43,15 @@ body {
     width: 20px;
     display: flex;
     justify-content: center;
+}
+.navigation-link {
+    display: flex;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+a:hover {
+    color: #858688;
 }
