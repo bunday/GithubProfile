@@ -55,3 +55,10 @@ a {
 a:hover {
     color: #858688;
 }
+.action-right {
+    display: flex;
+    font-size: 10px;
+}
+.action-right div{
+    padding: 0px 6px;
+}
