@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.header {
+    height: 5vh;
+    background-color: #242A2E;
+    color: white;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+}
