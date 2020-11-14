@@ -40,15 +40,10 @@ body {
     padding: 35px 220px;
 }
 .header {
-    height: 5vh;
     background-color: #242A2E;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.menu-item {
-    display: flex;
     align-items: center;
 }
 .github-icon {
@@ -165,10 +160,17 @@ a:hover {
         justify-content: space-between;
         width: 100%;
     }
+    .mobileMenu {
+        display: block;
+    }
+    .menu-item {
+        display: none;
+    }
 }
 @media (min-width: 769px) {
     .user-details {
         width: 25%;
+        z-index: 1;
     }
     .avatar-large {
         height: 250px;
@@ -183,6 +185,13 @@ a:hover {
     .tabs {
         display: flex;
         height: 100%;
+        align-items: center;
+    }
+    .mobileMenu {
+        display: none;
+    }
+    .menu-item {
+        display: flex;
         align-items: center;
     }
 }

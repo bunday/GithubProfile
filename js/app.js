@@ -31,12 +31,16 @@ function displayProfileDetails(data) {
     // description
     appendTag('p', ['user-role'], bio, userDetails);
 
+    const userTinyDetails = document.getElementById('smallUserInfo');
+    appendTag('span', [], login, userTinyDetails);
     
     // update picture
     const userAvatarLarge = document.getElementById('user-avatar');
     const userAvatarSmall = document.getElementById('user-avatar-small');
+    const userAvatarTiny = document.getElementById('user-avatar-tiny');
     userAvatarLarge.src = avatarUrl
     userAvatarSmall.src = avatarUrl
+    userAvatarTiny.src = avatarUrl
 }
 function displayRepositories(data) {
     const { repositories } = data.viewer;

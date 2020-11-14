@@ -14,10 +14,13 @@
   </head>
   <body>
     <div class="header container">
+      <div class="mobileMenu">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="github-icon">
+        <i class="fa fa-github"></i>
+      </div>
       <div class="menu-item">
-        <div class="github-icon">
-          <i class="fa fa-github"></i>
-        </div>
         <div class="searchbar">
           <input type="text" placeholder="Search or jump to..." />
           <div>
@@ -32,7 +35,7 @@
           <a href="#">Explore</a>
         </div>
       </div>
-      <div class="action-right">
+      <div class="action-right flex flex-align-items-center">
         <div>
           <i class="fa fa-bell"></i>
         </div>
@@ -41,66 +44,67 @@
           <i class="fa fa-caret-down"></i>
         </div>
         <div>
-          <i class="fa fa-bell"></i>
-          <i class="fa fa-caret-down"></i>
+        <img
+            class="avatar-medium"
+            id="user-avatar-tiny"
+            src="./img/avatar.jpg"
+          />
         </div>
       </div>
     </div>
 
     <div class="content">
-        <div id="static-header" class="static-header container">
-            <div id="smallUserInfo" class="user-info">
-                <img class="avatar-medium" id="user-avatar-small" src="./img/avatar.jpg" />
-                <span>
-                    bunday
-                </span>
-            </div>
-            <div class="tabs">
-                <div class="tab-item">
-                    <i class="fa fa-book text-grey"></i>
-                    <span> Overview</span>
-                </div>
-                <div class="tab-item active-tab">
-                    <i class="fa fa-archive text-grey"></i>
-                    <span> Repositories</span>
-                    <div class="repo-count">
-                        <span> 165 </span>
-                    </div>
-                </div>
-                <div class="tab-item">
-                    <i class="fa fa-server text-grey"></i>
-                    <span> Projects</span>
-                </div>
-                <div class="tab-item">
-                    <i class="fa fa-plug text-grey"></i>
-                    <span> Packages</span>
-                </div>
-                
-            </div>
+      <div id="static-header" class="static-header container">
+        <div id="smallUserInfo" class="user-info">
+          <img
+            class="avatar-medium"
+            id="user-avatar-small"
+            src="./img/avatar.jpg"
+          />
+          
         </div>
-        <div class="flex container content-wrapper">
-            <div class="user-details margin-vertical-10">
-                <img id="user-avatar" class="avatar-large" src="./img/avatar.jpg" />
-                <div id="userDetails" class="user-bio">
-                    
-
-                </div>
+        <div class="tabs">
+          <div class="tab-item">
+            <i class="fa fa-book text-grey"></i>
+            <span> Overview</span>
+          </div>
+          <div class="tab-item active-tab">
+            <i class="fa fa-archive text-grey"></i>
+            <span> Repositories</span>
+            <div class="repo-count">
+              <span> 165 </span>
             </div>
-            <div id="repositories-listing" class="margin-vertical-10">
-                <!-- search bar  -->
-                <div class="search-repo section-divider">
-                    <input placeholder="Find a repository..." />
-                </div>
-                <!-- search result  -->
-                <div class="section-divider">
-                    <span> 
-                        <strong> 124 </strong> results in <strong> public </strong> repositories 
-                    </span>
-                </div>
-                <!-- repositories  -->
-                
-            </div>
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-server text-grey"></i>
+            <span> Projects</span>
+          </div>
+          <div class="tab-item">
+            <i class="fa fa-plug text-grey"></i>
+            <span> Packages</span>
+          </div>
         </div>
+      </div>
+      <div class="flex container content-wrapper">
+        <div class="user-details margin-vertical-10">
+          <img id="user-avatar" class="avatar-large" src="./img/avatar.jpg" />
+          <div id="userDetails" class="user-bio"></div>
+        </div>
+        <div id="repositories-listing" class="margin-vertical-10">
+          <!-- search bar  -->
+          <div class="search-repo section-divider">
+            <input placeholder="Find a repository..." />
+          </div>
+          <!-- search result  -->
+          <div class="section-divider">
+            <span>
+              <strong> 124 </strong> results in
+              <strong> public </strong> repositories
+            </span>
+          </div>
+          <!-- repositories  -->
+        </div>
+      </div>
     </div>
   </body>
   <script src="./js/scroll.js"></script>
