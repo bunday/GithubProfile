@@ -1,18 +1,15 @@
 window.onload = function () {
   fetchGitHubProfile();
-// displayProfileDetails();
-// displayRepositories()
 };
 
 function fetchGitHubProfile() {
   fetch("https://api.github.com/graphql", {
     method: "POST",
-    headers: { "Content-Type": "application/json", "Authorization": "Bearer 2eac1c7b3a8b0116ca1fcf6a4f8f3e5c7ba0fd93" },
+    headers: { "Content-Type": "application/json", "Authorization": "Bearer 9d02f4c61467017ffc79893a2c014300b08e82fb" },
     body: JSON.stringify({ query: "query { viewer { login, bio, avatarUrl, name repositories(last: 20) { edges { node { id, name, description, forkCount, stargazerCount, updatedAt, languages(first: 1) {nodes {name, color}}}}totalCount}}}" }),
   })
     .then((res) => res.json())
     .then((res) => {
-        console.log(res.data)
         displayProfileDetails(res.data)
         displayRepositories(res.data)
     });
@@ -44,6 +41,7 @@ function displayProfileDetails(data) {
 }
 function displayRepositories(data) {
     const { repositories } = data.viewer;
+    repositories.edges = repositories.edges.reverse()
 
     for (let index = 0; index < repositories.edges.length; index++) {
         const repository = repositories && repositories.edges && repositories.edges[index] && repositories.edges[index].node;
