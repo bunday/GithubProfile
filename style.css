@@ -68,3 +68,24 @@ a:hover {
 .action-right div:hover{
     color: #858688;
 }
+.static-header {
+    padding: 0 25px;
+    height: 5vh;
+    border-bottom: solid 1px #E9ECEF;
+    display: flex;
+    align-items: center;
+}
+.user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.avatar-medium {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-info span {
+    padding: 0 10px;
+}
