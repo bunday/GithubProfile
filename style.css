@@ -79,6 +79,7 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 25%;
 }
 .avatar-medium {
     height: 30px;
@@ -88,4 +89,31 @@ a:hover {
 }
 .user-info span {
     padding: 0 10px;
+}
+.tabs {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.tab-item {
+    margin: 0 10px;
+    display: flex;
+}
+.tab-item span {
+    padding: 0 5px;
+}
+.repo-count {
+    background-color: #E7EAEC;
+    padding: 0 2px;
+    border-radius: 10px;
+}
+.active-tab {
+    height: 100%;
+    border-bottom: solid 2px #F9826C;
+}
+
+
+
+.text-grey {
+    color: #949DA5;
 }
