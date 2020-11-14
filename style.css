@@ -132,9 +132,46 @@ a:hover {
     margin: 20px 0;
     font-size: 14px;
 }
+.repositories-listing {
+    width: 55%;
+    padding-right: 25px;
+}
+.search-repo {
+    width: 100%;
+}
+.search-repo input {
+    width: 100%;
+    border: none;
+    border: solid 1px #E1E4E8;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.repo-title {
+    color: #0366D6;
+    font-weight: bold;
+}
 
 
 
+.flex {
+    display: flex;
+}
+.flex-justify-space-between {
+    justify-content: space-between;
+}
 .text-grey {
     color: #949DA5;
+}
+.text-grey-dark {
+    color: #576169
+}
+.section-divider {
+    padding: 20px 0;
+    border-bottom: solid 1px #E1E4E8;
+}
+.btn {
+    background-color: #FAFBFC;
+    border: solid 1px #D8DBDB;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
