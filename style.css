@@ -5,12 +5,44 @@
 }
 body {
     font-family: sans-serif;
+    width: fit-content;
+}
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+@media (min-width: 769px) {
+    .content-wrapper {
+        flex-direction: row;
+    }
+}
+@media (max-width:1090px) and (min-width:769px) {
+    .container {
+    
+        padding: 35px 20px;
+    }
+}
+@media (max-width:1300px) and (min-width:1091px) {
+    .container {
+    
+        padding: 35px 150px;
+    }
+}
+@media (min-width:1301px) {
+    .container {
+    
+        padding: 35px 220px;
+    }
+}​
+.container {
+    
+    padding: 35px 220px;
 }
 .header {
     height: 5vh;
     background-color: #242A2E;
     color: white;
-    padding: 10px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +52,7 @@ body {
     align-items: center;
 }
 .github-icon {
-    font-size: 26px;
+    font-size: 40px;
 }
 .github-icon:hover {
     color: #858688;
@@ -69,7 +101,6 @@ a:hover {
     color: #858688;
 }
 .static-header {
-    padding: 0 25px;
     height: 5vh;
     border-bottom: solid 1px #E9ECEF;
     display: flex;
@@ -111,10 +142,6 @@ a:hover {
     height: 100%;
     border-bottom: solid 2px #F9826C;
 }
-.scrollable-content {
-    padding: 0 25px;
-    display: flex;
-}
 .user-details {
     width: 25%;
 }
@@ -131,10 +158,6 @@ a:hover {
 .user-role {
     margin: 20px 0;
     font-size: 14px;
-}
-.repositories-listing {
-    width: 55%;
-    padding-right: 25px;
 }
 .search-repo {
     width: 100%;

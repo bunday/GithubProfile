@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <div class="header">
+    <div class="header container">
       <div class="menu-item">
         <div class="github-icon">
           <i class="fa fa-github"></i>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="content">
-        <div id="static-header" class="static-header">
+        <div id="static-header" class="static-header container">
             <div id="smallUserInfo" class="user-info">
                 <img class="avatar-medium" id="user-avatar-small" src="./img/avatar.jpg" />
                 <span>
@@ -78,15 +78,15 @@
                 
             </div>
         </div>
-        <div class="scrollable-content padding-all-25">
-            <div class="user-details">
+        <div class="flex container content-wrapper">
+            <div class="user-details margin-vertical-10">
                 <img id="user-avatar" class="avatar-large" src="./img/avatar.jpg" />
                 <div id="userDetails">
                     
 
                 </div>
             </div>
-            <div id="repositories-listing" class="repositories-listing">
+            <div id="repositories-listing" class="margin-vertical-10">
                 <!-- search bar  -->
                 <div class="search-repo section-divider">
                     <input placeholder="Find a repository..." />
