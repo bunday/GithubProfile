@@ -111,6 +111,27 @@ a:hover {
     height: 100%;
     border-bottom: solid 2px #F9826C;
 }
+.scrollable-content {
+    padding: 0 25px;
+    display: flex;
+}
+.user-details {
+    width: 25%;
+}
+.avatar-large {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user-fullname {
+    font-size: 18px;
+    font-weight: bold;
+}
+.user-role {
+    margin: 20px 0;
+    font-size: 14px;
+}
 
 
 
