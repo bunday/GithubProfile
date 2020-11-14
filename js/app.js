@@ -54,7 +54,7 @@ function renderRepositoryDetail(repository) {
     const sectionDiv = createDiv(['section-divider']);
     const upperDiv = createDiv(['flex','flex-justify-space-between','padding-horizontal-10']);
 
-    const titleDiv = document.createElement('div');
+    const titleDiv = createDiv(['repo-holder']);
     appendTag('p',['repo-title'], repository.name , titleDiv);
     repository.description ? 
         appendTag('p',['text-grey-dark','padding-horizontal-10'], repository.description, titleDiv)
