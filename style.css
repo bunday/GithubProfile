@@ -13,4 +13,34 @@ body {
     padding: 10px 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+.github-icon {
+    font-size: 26px;
+}
+.searchbar {
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px #444E56;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+.searchbar input {
+    padding: 2px 5px;
+    background: transparent;
+    color: white;
+    border: 0;
+}
+.searchbar div {
+    border: solid 1px #444E56;
+    border-radius: 5px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
 }
