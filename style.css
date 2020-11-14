@@ -219,3 +219,9 @@ a:hover {
     width: 100%;
     background-color: white;
 }
+.show {
+    visibility: visible;
+}
+.hide {
+    visibility: hidden;
+}
