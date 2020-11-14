@@ -150,6 +150,24 @@ a:hover {
     color: #0366D6;
     font-weight: bold;
 }
+.repo-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.indicator{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+} 
+.indicator-js {
+    background-color: yellow;
+}
+.indicator-html {
+    background-color: red;
+}
+.indicator-java {
+    background-color: blue;
+}
 
 
 
@@ -158,6 +176,12 @@ a:hover {
 }
 .flex-justify-space-between {
     justify-content: space-between;
+}
+.flex-justify-start {
+    justify-content: flex-start;
+}
+.flex-align-items-center {
+    align-items: center;
 }
 .text-grey {
     color: #949DA5;
@@ -174,4 +198,17 @@ a:hover {
     border: solid 1px #D8DBDB;
     padding: 5px 15px;
     border-radius: 5px;
+}
+.padding-horizontal-10 {
+    padding: 10px 0;
+}
+.margin-vertical-10 {
+    margin: 0 10px;
+}
+
+.margin-right-10 {
+    margin-right: 10px;
+}
+.padding-all-25 {
+    padding: 25px;
 }
